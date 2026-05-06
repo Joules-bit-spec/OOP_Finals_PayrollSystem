@@ -10,12 +10,21 @@ using System.Windows.Forms;
 
 namespace OOP_Finals_PayrollSystem
 {
-    public partial class Profile : Form
+    public partial class ProfileForm : Form
     {
-        public Profile()
+        public ProfileForm()
         {
             InitializeComponent();
         }
 
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

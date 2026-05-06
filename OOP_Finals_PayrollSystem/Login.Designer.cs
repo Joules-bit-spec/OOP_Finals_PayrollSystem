@@ -35,7 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.llblFP = new System.Windows.Forms.LinkLabel();
-            this.llblRegister = new System.Windows.Forms.LinkLabel();
+            this.lblRegister = new System.Windows.Forms.LinkLabel();
             this.btnRegister = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -107,19 +107,19 @@
             this.llblFP.Size = new System.Drawing.Size(0, 17);
             this.llblFP.TabIndex = 3;
             // 
-            // llblRegister
+            // lblRegister
             // 
-            this.llblRegister.AutoSize = true;
-            this.llblRegister.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(53)))), ((int)(((byte)(96)))));
-            this.llblRegister.Font = new System.Drawing.Font("DM Sans 14pt Thin", 7.799999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llblRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(53)))), ((int)(((byte)(96)))));
-            this.llblRegister.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(95)))), ((int)(((byte)(173)))));
-            this.llblRegister.Location = new System.Drawing.Point(707, 367);
-            this.llblRegister.Name = "llblRegister";
-            this.llblRegister.Size = new System.Drawing.Size(60, 17);
-            this.llblRegister.TabIndex = 3;
-            this.llblRegister.TabStop = true;
-            this.llblRegister.Text = "Sign Up!";
+            this.lblRegister.AutoSize = true;
+            this.lblRegister.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(53)))), ((int)(((byte)(96)))));
+            this.lblRegister.Font = new System.Drawing.Font("DM Sans 14pt Thin", 7.799999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(53)))), ((int)(((byte)(96)))));
+            this.lblRegister.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(95)))), ((int)(((byte)(173)))));
+            this.lblRegister.Location = new System.Drawing.Point(707, 367);
+            this.lblRegister.Name = "lblRegister";
+            this.lblRegister.Size = new System.Drawing.Size(60, 17);
+            this.lblRegister.TabIndex = 3;
+            this.lblRegister.TabStop = true;
+            this.lblRegister.Text = "Sign Up!";
             // 
             // btnRegister
             // 
@@ -208,7 +208,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.llblRegister);
+            this.Controls.Add(this.lblRegister);
             this.Controls.Add(this.llblFP);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -232,7 +232,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel llblFP;
-        private System.Windows.Forms.LinkLabel llblRegister;
+        private System.Windows.Forms.LinkLabel lblRegister;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

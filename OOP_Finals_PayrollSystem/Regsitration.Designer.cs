@@ -51,21 +51,21 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtRegPos = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtRegDept = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtRegUserID = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtRegPass = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -306,14 +306,14 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.txtRegPass);
             this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtRegUserID);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txtRegPos);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.txtRegDept);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Location = new System.Drawing.Point(712, 158);
@@ -321,15 +321,15 @@
             this.panel2.Size = new System.Drawing.Size(318, 439);
             this.panel2.TabIndex = 13;
             // 
-            // textBox2
+            // txtRegPos
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(22, 157);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(271, 37);
-            this.textBox2.TabIndex = 6;
+            this.txtRegPos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtRegPos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRegPos.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRegPos.Location = new System.Drawing.Point(22, 157);
+            this.txtRegPos.Name = "txtRegPos";
+            this.txtRegPos.Size = new System.Drawing.Size(271, 37);
+            this.txtRegPos.TabIndex = 6;
             // 
             // label9
             // 
@@ -341,15 +341,15 @@
             this.label9.TabIndex = 5;
             this.label9.Text = "POSITION";
             // 
-            // textBox3
+            // txtRegDept
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(22, 87);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(271, 37);
-            this.textBox3.TabIndex = 4;
+            this.txtRegDept.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtRegDept.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRegDept.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRegDept.Location = new System.Drawing.Point(22, 87);
+            this.txtRegDept.Name = "txtRegDept";
+            this.txtRegDept.Size = new System.Drawing.Size(271, 37);
+            this.txtRegDept.TabIndex = 4;
             // 
             // label12
             // 
@@ -381,15 +381,15 @@
             this.label14.TabIndex = 9;
             this.label14.Text = "LOGIN CREDENTIALS";
             // 
-            // textBox1
+            // txtRegUserID
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(22, 300);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(271, 37);
-            this.textBox1.TabIndex = 11;
+            this.txtRegUserID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtRegUserID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRegUserID.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRegUserID.Location = new System.Drawing.Point(22, 300);
+            this.txtRegUserID.Name = "txtRegUserID";
+            this.txtRegUserID.Size = new System.Drawing.Size(271, 37);
+            this.txtRegUserID.TabIndex = 11;
             // 
             // label7
             // 
@@ -397,19 +397,19 @@
             this.label7.Font = new System.Drawing.Font("DM Sans 14pt Medium", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(19, 280);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 17);
+            this.label7.Size = new System.Drawing.Size(55, 17);
             this.label7.TabIndex = 10;
-            this.label7.Text = "USERID";
+            this.label7.Text = "USER ID";
             // 
-            // textBox4
+            // txtRegPass
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(22, 375);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(271, 37);
-            this.textBox4.TabIndex = 13;
+            this.txtRegPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtRegPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRegPass.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRegPass.Location = new System.Drawing.Point(22, 375);
+            this.txtRegPass.Name = "txtRegPass";
+            this.txtRegPass.Size = new System.Drawing.Size(271, 37);
+            this.txtRegPass.TabIndex = 13;
             // 
             // label15
             // 
@@ -464,18 +464,18 @@
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnCancel
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("DM Sans 14pt", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(31)))), ((int)(((byte)(61)))));
-            this.button1.Location = new System.Drawing.Point(770, 620);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 46);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Cancel";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCancel.BackColor = System.Drawing.Color.White;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnCancel.Font = new System.Drawing.Font("DM Sans 14pt", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(31)))), ((int)(((byte)(61)))));
+            this.btnCancel.Location = new System.Drawing.Point(770, 620);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(127, 46);
+            this.btnCancel.TabIndex = 18;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // RegForm
             // 
@@ -483,7 +483,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(1050, 678);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label17);
@@ -530,20 +530,20 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtRegPos;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtRegDept;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtRegPass;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtRegUserID;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button btnRegister;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCancel;
     }
 }
