@@ -1,6 +1,6 @@
 ﻿namespace OOP_Finals_PayrollSystem
 {
-    partial class Regsitration
+    partial class RegForm
     {
         /// <summary>
         /// Required designer variable.
@@ -164,14 +164,14 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Middle Initial:";
             // 
-            // Regsitration
+            // RegForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1034, 586);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Name = "Regsitration";
+            this.Name = "RegForm";
             this.Text = "Regsitration";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

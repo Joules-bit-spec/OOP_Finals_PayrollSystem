@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OOP_Finals_PayrollSystem
 {
-    public partial class Login : Form
+    public partial class LoginForm : Form
     {
-        public Login()
+        public LoginForm()
         {
             InitializeComponent();
         }

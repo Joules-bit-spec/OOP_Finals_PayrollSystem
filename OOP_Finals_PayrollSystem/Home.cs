@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace OOP_Finals_PayrollSystem
 {
-    public partial class RegForm : Form
+    public partial class HomeForm : Form
     {
-        public RegForm()
+        public HomeForm()
         {
             InitializeComponent();
         }
-
     }
 }
