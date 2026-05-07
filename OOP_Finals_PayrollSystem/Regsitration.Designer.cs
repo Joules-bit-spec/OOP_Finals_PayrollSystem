@@ -1,6 +1,6 @@
 ﻿namespace OOP_Finals_PayrollSystem
 {
-    partial class Regsitration
+    partial class RegForm
     {
         /// <summary>
         /// Required designer variable.
@@ -436,7 +436,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Name = "Regsitration";
+            this.Name = "RegForm";
             this.Text = "Regsitration";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
