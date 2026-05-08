@@ -16,5 +16,6 @@ namespace OOP_Finals_PayrollSystem
         {
             InitializeComponent();
         }
+
     }
 }
