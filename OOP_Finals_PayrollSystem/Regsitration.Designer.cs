@@ -32,16 +32,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cmbRegGender = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtRegFname = new System.Windows.Forms.TextBox();
-            this.txtRegSname = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.cmbRegBday = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtRegMidInit = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cmbRegBday = new System.Windows.Forms.ComboBox();
+            this.txtRegSname = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtRegFname = new System.Windows.Forms.TextBox();
+            this.cmbRegGender = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtRegAddress = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -51,16 +51,16 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtRegPass = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtRegUserID = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.txtRegPos = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtRegDept = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtRegUserID = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtRegPass = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -112,6 +112,89 @@
             this.panel1.Size = new System.Drawing.Size(318, 439);
             this.panel1.TabIndex = 2;
             // 
+            // cmbRegBday
+            // 
+            this.cmbRegBday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.cmbRegBday.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbRegBday.FormattingEnabled = true;
+            this.cmbRegBday.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cmbRegBday.Location = new System.Drawing.Point(23, 378);
+            this.cmbRegBday.Name = "cmbRegBday";
+            this.cmbRegBday.Size = new System.Drawing.Size(271, 38);
+            this.cmbRegBday.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("DM Sans 14pt Medium", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(20, 358);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 17);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "BIRTHDATE";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("DM Sans 14pt Medium", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(20, 283);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 17);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "GENDER";
+            // 
+            // txtRegMidInit
+            // 
+            this.txtRegMidInit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtRegMidInit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRegMidInit.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRegMidInit.Location = new System.Drawing.Point(22, 230);
+            this.txtRegMidInit.Name = "txtRegMidInit";
+            this.txtRegMidInit.Size = new System.Drawing.Size(271, 37);
+            this.txtRegMidInit.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("DM Sans 14pt Medium", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(19, 210);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 17);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "MIDDLE INITIAL";
+            // 
+            // txtRegSname
+            // 
+            this.txtRegSname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtRegSname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRegSname.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRegSname.Location = new System.Drawing.Point(22, 157);
+            this.txtRegSname.Name = "txtRegSname";
+            this.txtRegSname.Size = new System.Drawing.Size(271, 37);
+            this.txtRegSname.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("DM Sans 14pt Medium", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(19, 137);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 17);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "SURNAME";
+            // 
+            // txtRegFname
+            // 
+            this.txtRegFname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtRegFname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRegFname.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRegFname.Location = new System.Drawing.Point(22, 87);
+            this.txtRegFname.Name = "txtRegFname";
+            this.txtRegFname.Size = new System.Drawing.Size(271, 37);
+            this.txtRegFname.TabIndex = 4;
+            // 
             // cmbRegGender
             // 
             this.cmbRegGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
@@ -134,89 +217,6 @@
             this.label8.Size = new System.Drawing.Size(231, 24);
             this.label8.TabIndex = 1;
             this.label8.Text = "PERSONAL INFORMATION";
-            // 
-            // txtRegFname
-            // 
-            this.txtRegFname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.txtRegFname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRegFname.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegFname.Location = new System.Drawing.Point(22, 87);
-            this.txtRegFname.Name = "txtRegFname";
-            this.txtRegFname.Size = new System.Drawing.Size(271, 37);
-            this.txtRegFname.TabIndex = 4;
-            // 
-            // txtRegSname
-            // 
-            this.txtRegSname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.txtRegSname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRegSname.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegSname.Location = new System.Drawing.Point(22, 157);
-            this.txtRegSname.Name = "txtRegSname";
-            this.txtRegSname.Size = new System.Drawing.Size(271, 37);
-            this.txtRegSname.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("DM Sans 14pt Medium", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(19, 137);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "SURNAME";
-            // 
-            // txtRegMidInit
-            // 
-            this.txtRegMidInit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.txtRegMidInit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRegMidInit.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegMidInit.Location = new System.Drawing.Point(22, 230);
-            this.txtRegMidInit.Name = "txtRegMidInit";
-            this.txtRegMidInit.Size = new System.Drawing.Size(271, 37);
-            this.txtRegMidInit.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("DM Sans 14pt Medium", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(19, 210);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 17);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "MIDDLE INITIAL";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("DM Sans 14pt Medium", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(20, 283);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 17);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "GENDER";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("DM Sans 14pt Medium", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(20, 358);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 17);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "BIRTHDATE";
-            // 
-            // cmbRegBday
-            // 
-            this.cmbRegBday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.cmbRegBday.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbRegBday.FormattingEnabled = true;
-            this.cmbRegBday.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.cmbRegBday.Location = new System.Drawing.Point(23, 378);
-            this.cmbRegBday.Name = "cmbRegBday";
-            this.cmbRegBday.Size = new System.Drawing.Size(271, 38);
-            this.cmbRegBday.TabIndex = 11;
             // 
             // panel4
             // 
@@ -321,6 +321,56 @@
             this.panel2.Size = new System.Drawing.Size(318, 439);
             this.panel2.TabIndex = 13;
             // 
+            // txtRegPass
+            // 
+            this.txtRegPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtRegPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRegPass.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRegPass.Location = new System.Drawing.Point(22, 375);
+            this.txtRegPass.Name = "txtRegPass";
+            this.txtRegPass.Size = new System.Drawing.Size(271, 37);
+            this.txtRegPass.TabIndex = 13;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("DM Sans 14pt Medium", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(19, 355);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(80, 17);
+            this.label15.TabIndex = 12;
+            this.label15.Text = "PASSWORD";
+            // 
+            // txtRegUserID
+            // 
+            this.txtRegUserID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtRegUserID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRegUserID.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRegUserID.Location = new System.Drawing.Point(22, 300);
+            this.txtRegUserID.Name = "txtRegUserID";
+            this.txtRegUserID.Size = new System.Drawing.Size(271, 37);
+            this.txtRegUserID.TabIndex = 11;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("DM Sans 14pt Medium", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(19, 280);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(55, 17);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "USER ID";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(63, 243);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(188, 24);
+            this.label14.TabIndex = 9;
+            this.label14.Text = "LOGIN CREDENTIALS";
+            // 
             // txtRegPos
             // 
             this.txtRegPos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
@@ -370,56 +420,6 @@
             this.label13.Size = new System.Drawing.Size(89, 17);
             this.label13.TabIndex = 1;
             this.label13.Text = "DEPARTMENT";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(63, 243);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(188, 24);
-            this.label14.TabIndex = 9;
-            this.label14.Text = "LOGIN CREDENTIALS";
-            // 
-            // txtRegUserID
-            // 
-            this.txtRegUserID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.txtRegUserID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRegUserID.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegUserID.Location = new System.Drawing.Point(22, 300);
-            this.txtRegUserID.Name = "txtRegUserID";
-            this.txtRegUserID.Size = new System.Drawing.Size(271, 37);
-            this.txtRegUserID.TabIndex = 11;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("DM Sans 14pt Medium", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(19, 280);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 17);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "USER ID";
-            // 
-            // txtRegPass
-            // 
-            this.txtRegPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.txtRegPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRegPass.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegPass.Location = new System.Drawing.Point(22, 375);
-            this.txtRegPass.Name = "txtRegPass";
-            this.txtRegPass.Size = new System.Drawing.Size(271, 37);
-            this.txtRegPass.TabIndex = 13;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("DM Sans 14pt Medium", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(19, 355);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(80, 17);
-            this.label15.TabIndex = 12;
-            this.label15.Text = "PASSWORD";
             // 
             // pictureBox2
             // 
@@ -492,7 +492,9 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "RegForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Regsitration";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
