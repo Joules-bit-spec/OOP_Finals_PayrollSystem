@@ -72,6 +72,12 @@
     <Compile Include="Regsitration.Designer.cs">
       <DependentUpon>Regsitration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary.Designer.cs">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +98,9 @@
     </Compile>
     <EmbeddedResource Include="Regsitration.resx">
       <DependentUpon>Regsitration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salary.resx">
+      <DependentUpon>Salary.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
