@@ -30,36 +30,36 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfileForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtRegMidInit = new System.Windows.Forms.TextBox();
+            this.txtProMidInit = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtRegSname = new System.Windows.Forms.TextBox();
+            this.txtProSname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtRegFname = new System.Windows.Forms.TextBox();
+            this.txtProFname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
             this.lblPosition = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtProAddress = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtProEmail = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtProContactNo = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtProPass = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtProUserID = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnEditProfile = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.dtpProBirth = new System.Windows.Forms.DateTimePicker();
+            this.cmbProGender = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel2.SuspendLayout();
@@ -69,41 +69,21 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.cmbProGender);
+            this.panel1.Controls.Add(this.dtpProBirth);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txtRegMidInit);
+            this.panel1.Controls.Add(this.txtProMidInit);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.txtRegSname);
+            this.panel1.Controls.Add(this.txtProSname);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.txtRegFname);
+            this.panel1.Controls.Add(this.txtProFname);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Location = new System.Drawing.Point(28, 147);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(917, 241);
             this.panel1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(26, 177);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(271, 37);
-            this.textBox2.TabIndex = 20;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(322, 177);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(271, 37);
-            this.textBox1.TabIndex = 19;
             // 
             // label1
             // 
@@ -125,15 +105,16 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "BIRTHDATE";
             // 
-            // txtRegMidInit
+            // txtProMidInit
             // 
-            this.txtRegMidInit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.txtRegMidInit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRegMidInit.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegMidInit.Location = new System.Drawing.Point(616, 89);
-            this.txtRegMidInit.Name = "txtRegMidInit";
-            this.txtRegMidInit.Size = new System.Drawing.Size(271, 37);
-            this.txtRegMidInit.TabIndex = 10;
+            this.txtProMidInit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtProMidInit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtProMidInit.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProMidInit.Location = new System.Drawing.Point(616, 89);
+            this.txtProMidInit.Name = "txtProMidInit";
+            this.txtProMidInit.ReadOnly = true;
+            this.txtProMidInit.Size = new System.Drawing.Size(271, 37);
+            this.txtProMidInit.TabIndex = 10;
             // 
             // label4
             // 
@@ -145,15 +126,16 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "MIDDLE INITIAL";
             // 
-            // txtRegSname
+            // txtProSname
             // 
-            this.txtRegSname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.txtRegSname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRegSname.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegSname.Location = new System.Drawing.Point(322, 89);
-            this.txtRegSname.Name = "txtRegSname";
-            this.txtRegSname.Size = new System.Drawing.Size(271, 37);
-            this.txtRegSname.TabIndex = 8;
+            this.txtProSname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtProSname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtProSname.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProSname.Location = new System.Drawing.Point(322, 89);
+            this.txtProSname.Name = "txtProSname";
+            this.txtProSname.ReadOnly = true;
+            this.txtProSname.Size = new System.Drawing.Size(271, 37);
+            this.txtProSname.TabIndex = 8;
             // 
             // label3
             // 
@@ -165,15 +147,16 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "SURNAME";
             // 
-            // txtRegFname
+            // txtProFname
             // 
-            this.txtRegFname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.txtRegFname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRegFname.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegFname.Location = new System.Drawing.Point(26, 89);
-            this.txtRegFname.Name = "txtRegFname";
-            this.txtRegFname.Size = new System.Drawing.Size(271, 37);
-            this.txtRegFname.TabIndex = 6;
+            this.txtProFname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtProFname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtProFname.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProFname.Location = new System.Drawing.Point(26, 89);
+            this.txtProFname.Name = "txtProFname";
+            this.txtProFname.ReadOnly = true;
+            this.txtProFname.Size = new System.Drawing.Size(271, 37);
+            this.txtProFname.TabIndex = 6;
             // 
             // label2
             // 
@@ -231,11 +214,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.txtProAddress);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.textBox8);
+            this.panel2.Controls.Add(this.txtProEmail);
             this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.textBox9);
+            this.panel2.Controls.Add(this.txtProContactNo);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Location = new System.Drawing.Point(28, 387);
@@ -243,15 +226,16 @@
             this.panel2.Size = new System.Drawing.Size(917, 154);
             this.panel2.TabIndex = 21;
             // 
-            // textBox5
+            // txtProAddress
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(616, 89);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(271, 37);
-            this.textBox5.TabIndex = 10;
+            this.txtProAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtProAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtProAddress.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProAddress.Location = new System.Drawing.Point(616, 89);
+            this.txtProAddress.Name = "txtProAddress";
+            this.txtProAddress.ReadOnly = true;
+            this.txtProAddress.Size = new System.Drawing.Size(271, 37);
+            this.txtProAddress.TabIndex = 10;
             // 
             // label10
             // 
@@ -263,15 +247,16 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "HOME ADDRESS";
             // 
-            // textBox8
+            // txtProEmail
             // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(322, 89);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(271, 37);
-            this.textBox8.TabIndex = 8;
+            this.txtProEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtProEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtProEmail.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProEmail.Location = new System.Drawing.Point(322, 89);
+            this.txtProEmail.Name = "txtProEmail";
+            this.txtProEmail.ReadOnly = true;
+            this.txtProEmail.Size = new System.Drawing.Size(271, 37);
+            this.txtProEmail.TabIndex = 8;
             // 
             // label13
             // 
@@ -284,15 +269,16 @@
             this.label13.Text = "EMAIL";
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
-            // textBox9
+            // txtProContactNo
             // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(26, 89);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(271, 37);
-            this.textBox9.TabIndex = 6;
+            this.txtProContactNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtProContactNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtProContactNo.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProContactNo.Location = new System.Drawing.Point(26, 89);
+            this.txtProContactNo.Name = "txtProContactNo";
+            this.txtProContactNo.ReadOnly = true;
+            this.txtProContactNo.Size = new System.Drawing.Size(271, 37);
+            this.txtProContactNo.TabIndex = 6;
             // 
             // label14
             // 
@@ -318,9 +304,9 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.txtProPass);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.textBox4);
+            this.panel3.Controls.Add(this.txtProUserID);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Location = new System.Drawing.Point(28, 540);
@@ -328,15 +314,16 @@
             this.panel3.Size = new System.Drawing.Size(917, 158);
             this.panel3.TabIndex = 22;
             // 
-            // textBox3
+            // txtProPass
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(322, 89);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(271, 37);
-            this.textBox3.TabIndex = 8;
+            this.txtProPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtProPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtProPass.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProPass.Location = new System.Drawing.Point(322, 89);
+            this.txtProPass.Name = "txtProPass";
+            this.txtProPass.ReadOnly = true;
+            this.txtProPass.Size = new System.Drawing.Size(271, 37);
+            this.txtProPass.TabIndex = 8;
             // 
             // label6
             // 
@@ -348,15 +335,16 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "PASSWORD";
             // 
-            // textBox4
+            // txtProUserID
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(26, 89);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(271, 37);
-            this.textBox4.TabIndex = 6;
+            this.txtProUserID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.txtProUserID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtProUserID.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProUserID.Location = new System.Drawing.Point(26, 89);
+            this.txtProUserID.Name = "txtProUserID";
+            this.txtProUserID.ReadOnly = true;
+            this.txtProUserID.Size = new System.Drawing.Size(271, 37);
+            this.txtProUserID.TabIndex = 6;
             // 
             // label7
             // 
@@ -404,6 +392,30 @@
             this.btnClose.TabIndex = 29;
             this.btnClose.Text = "CLOSE";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // dtpProBirth
+            // 
+            this.dtpProBirth.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.dtpProBirth.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpProBirth.Location = new System.Drawing.Point(26, 177);
+            this.dtpProBirth.Name = "dtpProBirth";
+            this.dtpProBirth.Size = new System.Drawing.Size(271, 37);
+            this.dtpProBirth.TabIndex = 20;
+            this.dtpProBirth.ValueChanged += new System.EventHandler(this.dtpProBirth_ValueChanged);
+            // 
+            // cmbProGender
+            // 
+            this.cmbProGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.cmbProGender.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbProGender.FormattingEnabled = true;
+            this.cmbProGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cmbProGender.Location = new System.Drawing.Point(322, 176);
+            this.cmbProGender.Name = "cmbProGender";
+            this.cmbProGender.Size = new System.Drawing.Size(271, 38);
+            this.cmbProGender.TabIndex = 21;
             // 
             // ProfileForm
             // 
@@ -442,31 +454,31 @@
         private System.Windows.Forms.Label lblPosition;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtRegFname;
+        private System.Windows.Forms.TextBox txtProFname;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtRegSname;
+        private System.Windows.Forms.TextBox txtProSname;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtRegMidInit;
+        private System.Windows.Forms.TextBox txtProMidInit;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtProContactNo;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtProEmail;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtProPass;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtProUserID;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtProAddress;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnEditProfile;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.DateTimePicker dtpProBirth;
+        private System.Windows.Forms.ComboBox cmbProGender;
     }
 }

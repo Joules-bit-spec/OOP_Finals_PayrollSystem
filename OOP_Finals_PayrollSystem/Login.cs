@@ -12,7 +12,7 @@ namespace OOP_Finals_PayrollSystem
 {
     public partial class LoginForm : Form
     {
-        private readonly DB database = new DB();
+        private readonly Database Db = new Database();
         public LoginForm()
         {
             InitializeComponent();
@@ -35,43 +35,46 @@ namespace OOP_Finals_PayrollSystem
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtUserID.Text) && string.IsNullOrEmpty(txtPassword.Text))
-            {
-                MessageBox.Show("Please Enter your Login Credentials", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
             try
             {
-                using (var connection = DB.GetConnection())
+                string query = "SELECT * FROM Users WHERE UserID = @UserID AND Password = @Password";
+                var parameters = new Dictionary<string, object>
                 {
-                    connection.Open();
-                    string query = "SELECT COUNT(*) FROM Employees WHERE UserID = @UserID AND Password = @Password";
-                    using (var command = new System.Data.SqlClient.SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@UserID", txtUserID.Text);
-                        command.Parameters.AddWithValue("@Password", txtPassword.Text);
-                        int count = (int)command.ExecuteScalar();
-                        if (count > 0)
-                        {
-                            MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                            HomeForm homepage = new HomeForm();
-                            homepage.Show();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Invalid UserID or Password. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
-                        }
-                    }
+                    { "@UserID", txtUserID.Text.Trim() },
+                    { "@Password", txtPassword.Text.Trim() }
+                };
+                DataTable result = Db.ExecuteQuery(query, parameters);
+                if (result.Rows.Count > 0)
+                {
+                    MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    HomeForm home = new HomeForm();
+                    home.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid UserID or Password. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
+                if (string.IsNullOrEmpty(txtUserID.Text) || string.IsNullOrEmpty(txtPassword.Text))
+                {
+                    throw new ArgumentException("All fields are required. Please fill in both UserID and Password.");
+                }
             }
+            catch (ArgumentNullException ex)
+            {
+                MessageBox.Show("Validation error: " + ex.Message, "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
+            finally
+            {
+                txtUserID.Clear();
+                txtPassword.Clear();
             }
         }
     }

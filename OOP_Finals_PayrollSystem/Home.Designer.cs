@@ -270,6 +270,7 @@
             this.btnLogOut.TabIndex = 17;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = false;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnPayroll
             // 
@@ -285,6 +286,7 @@
             this.btnPayroll.TabIndex = 16;
             this.btnPayroll.Text = "Payroll";
             this.btnPayroll.UseVisualStyleBackColor = false;
+            this.btnPayroll.Click += new System.EventHandler(this.btnPayroll_Click);
             // 
             // btnDeductions
             // 
@@ -300,6 +302,7 @@
             this.btnDeductions.TabIndex = 15;
             this.btnDeductions.Text = "Deductions";
             this.btnDeductions.UseVisualStyleBackColor = false;
+            this.btnDeductions.Click += new System.EventHandler(this.btnDeductions_Click);
             // 
             // btnProfile
             // 
@@ -525,6 +528,7 @@
             this.btnRegister.TabIndex = 49;
             this.btnRegister.Text = "View Deductions";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // label45
             // 

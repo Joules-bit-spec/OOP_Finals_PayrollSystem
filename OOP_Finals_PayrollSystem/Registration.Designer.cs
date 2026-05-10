@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cmbRegBday = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtRegMidInit = new System.Windows.Forms.TextBox();
@@ -51,6 +50,8 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbPosition = new System.Windows.Forms.ComboBox();
+            this.cmbDept = new System.Windows.Forms.ComboBox();
             this.txtRegPass = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtRegUserID = new System.Windows.Forms.TextBox();
@@ -64,8 +65,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.cmbDept = new System.Windows.Forms.ComboBox();
-            this.cmbPosition = new System.Windows.Forms.ComboBox();
+            this.dtpRegBirth = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -96,7 +96,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.cmbRegBday);
+            this.panel1.Controls.Add(this.dtpRegBirth);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtRegMidInit);
@@ -111,19 +111,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(318, 439);
             this.panel1.TabIndex = 2;
-            // 
-            // cmbRegBday
-            // 
-            this.cmbRegBday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.cmbRegBday.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbRegBday.FormattingEnabled = true;
-            this.cmbRegBday.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.cmbRegBday.Location = new System.Drawing.Point(23, 378);
-            this.cmbRegBday.Name = "cmbRegBday";
-            this.cmbRegBday.Size = new System.Drawing.Size(271, 38);
-            this.cmbRegBday.TabIndex = 11;
             // 
             // label5
             // 
@@ -321,6 +308,37 @@
             this.panel2.Size = new System.Drawing.Size(318, 439);
             this.panel2.TabIndex = 13;
             // 
+            // cmbPosition
+            // 
+            this.cmbPosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.cmbPosition.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPosition.FormattingEnabled = true;
+            this.cmbPosition.Items.AddRange(new object[] {
+            "Operations",
+            "Sales & Inventory",
+            "Finance & Administration",
+            "Customer Service"});
+            this.cmbPosition.Location = new System.Drawing.Point(22, 156);
+            this.cmbPosition.Name = "cmbPosition";
+            this.cmbPosition.Size = new System.Drawing.Size(271, 38);
+            this.cmbPosition.TabIndex = 14;
+            this.cmbPosition.SelectedIndexChanged += new System.EventHandler(this.cmbPosition_SelectedIndexChanged);
+            // 
+            // cmbDept
+            // 
+            this.cmbDept.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.cmbDept.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDept.FormattingEnabled = true;
+            this.cmbDept.Items.AddRange(new object[] {
+            "Operations",
+            "Sales & Inventory",
+            "Finance & Administration",
+            "Customer Service"});
+            this.cmbDept.Location = new System.Drawing.Point(22, 86);
+            this.cmbDept.Name = "cmbDept";
+            this.cmbDept.Size = new System.Drawing.Size(271, 38);
+            this.cmbDept.TabIndex = 9;
+            // 
             // txtRegPass
             // 
             this.txtRegPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
@@ -330,6 +348,7 @@
             this.txtRegPass.Name = "txtRegPass";
             this.txtRegPass.Size = new System.Drawing.Size(271, 37);
             this.txtRegPass.TabIndex = 13;
+            this.txtRegPass.UseSystemPasswordChar = true;
             // 
             // label15
             // 
@@ -459,36 +478,14 @@
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // cmbDept
+            // dtpRegBirth
             // 
-            this.cmbDept.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.cmbDept.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbDept.FormattingEnabled = true;
-            this.cmbDept.Items.AddRange(new object[] {
-            "Operations",
-            "Sales & Inventory",
-            "Finance & Administration",
-            "Customer Service"});
-            this.cmbDept.Location = new System.Drawing.Point(22, 86);
-            this.cmbDept.Name = "cmbDept";
-            this.cmbDept.Size = new System.Drawing.Size(271, 38);
-            this.cmbDept.TabIndex = 9;
-            // 
-            // cmbPosition
-            // 
-            this.cmbPosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.cmbPosition.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbPosition.FormattingEnabled = true;
-            this.cmbPosition.Items.AddRange(new object[] {
-            "Operations",
-            "Sales & Inventory",
-            "Finance & Administration",
-            "Customer Service"});
-            this.cmbPosition.Location = new System.Drawing.Point(22, 156);
-            this.cmbPosition.Name = "cmbPosition";
-            this.cmbPosition.Size = new System.Drawing.Size(271, 38);
-            this.cmbPosition.TabIndex = 14;
-            this.cmbPosition.SelectedIndexChanged += new System.EventHandler(this.cmbPosition_SelectedIndexChanged);
+            this.dtpRegBirth.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.dtpRegBirth.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpRegBirth.Location = new System.Drawing.Point(23, 378);
+            this.dtpRegBirth.Name = "dtpRegBirth";
+            this.dtpRegBirth.Size = new System.Drawing.Size(271, 37);
+            this.dtpRegBirth.TabIndex = 9;
             // 
             // RegForm
             // 
@@ -535,7 +532,6 @@
         private System.Windows.Forms.TextBox txtRegSname;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cmbRegBday;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txtRegAddress;
         private System.Windows.Forms.Label label10;
@@ -560,5 +556,6 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.ComboBox cmbPosition;
         private System.Windows.Forms.ComboBox cmbDept;
+        private System.Windows.Forms.DateTimePicker dtpRegBirth;
     }
 }

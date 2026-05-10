@@ -1,6 +1,6 @@
 ﻿namespace OOP_Finals_PayrollSystem
 {
-    partial class Salary
+    partial class SalaryForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +31,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lblPeriod = new System.Windows.Forms.Label();
+            this.lblBasicSalary = new System.Windows.Forms.Label();
+            this.lblPayType = new System.Windows.Forms.Label();
+            this.lblDept = new System.Windows.Forms.Label();
+            this.lblPos = new System.Windows.Forms.Label();
+            this.lblEmpName = new System.Windows.Forms.Label();
+            this.lblEmpID = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -47,8 +47,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
+            this.lblTotDeduc = new System.Windows.Forms.Label();
+            this.lblBasSal = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@
             this.label24 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label27 = new System.Windows.Forms.Label();
+            this.lblNetPay = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -94,13 +94,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label21);
-            this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.label19);
-            this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.lblPeriod);
+            this.panel1.Controls.Add(this.lblBasicSalary);
+            this.panel1.Controls.Add(this.lblPayType);
+            this.panel1.Controls.Add(this.lblDept);
+            this.panel1.Controls.Add(this.lblPos);
+            this.panel1.Controls.Add(this.lblEmpName);
+            this.panel1.Controls.Add(this.lblEmpID);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label7);
@@ -115,82 +115,82 @@
             this.panel1.Size = new System.Drawing.Size(703, 197);
             this.panel1.TabIndex = 2;
             // 
-            // label21
+            // lblPeriod
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(484, 87);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(37, 17);
-            this.label21.TabIndex = 23;
-            this.label21.Text = "label";
+            this.lblPeriod.AutoSize = true;
+            this.lblPeriod.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPeriod.Location = new System.Drawing.Point(484, 87);
+            this.lblPeriod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPeriod.Name = "lblPeriod";
+            this.lblPeriod.Size = new System.Drawing.Size(97, 17);
+            this.lblPeriod.TabIndex = 23;
+            this.lblPeriod.Text = "May 1 - May 15";
             // 
-            // label20
+            // lblBasicSalary
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(484, 57);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(37, 17);
-            this.label20.TabIndex = 22;
-            this.label20.Text = "label";
+            this.lblBasicSalary.AutoSize = true;
+            this.lblBasicSalary.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBasicSalary.Location = new System.Drawing.Point(484, 57);
+            this.lblBasicSalary.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBasicSalary.Name = "lblBasicSalary";
+            this.lblBasicSalary.Size = new System.Drawing.Size(37, 17);
+            this.lblBasicSalary.TabIndex = 22;
+            this.lblBasicSalary.Text = "label";
             // 
-            // label19
+            // lblPayType
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(484, 116);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(37, 17);
-            this.label19.TabIndex = 22;
-            this.label19.Text = "label";
+            this.lblPayType.AutoSize = true;
+            this.lblPayType.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPayType.Location = new System.Drawing.Point(484, 116);
+            this.lblPayType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPayType.Name = "lblPayType";
+            this.lblPayType.Size = new System.Drawing.Size(40, 17);
+            this.lblPayType.TabIndex = 22;
+            this.lblPayType.Text = "Cash";
             // 
-            // label18
+            // lblDept
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(149, 145);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(37, 17);
-            this.label18.TabIndex = 21;
-            this.label18.Text = "label";
+            this.lblDept.AutoSize = true;
+            this.lblDept.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDept.Location = new System.Drawing.Point(149, 145);
+            this.lblDept.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDept.Name = "lblDept";
+            this.lblDept.Size = new System.Drawing.Size(37, 17);
+            this.lblDept.TabIndex = 21;
+            this.lblDept.Text = "label";
             // 
-            // label17
+            // lblPos
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(149, 116);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(37, 17);
-            this.label17.TabIndex = 20;
-            this.label17.Text = "label";
+            this.lblPos.AutoSize = true;
+            this.lblPos.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPos.Location = new System.Drawing.Point(149, 116);
+            this.lblPos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPos.Name = "lblPos";
+            this.lblPos.Size = new System.Drawing.Size(37, 17);
+            this.lblPos.TabIndex = 20;
+            this.lblPos.Text = "label";
             // 
-            // label16
+            // lblEmpName
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(149, 87);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(37, 17);
-            this.label16.TabIndex = 19;
-            this.label16.Text = "label";
+            this.lblEmpName.AutoSize = true;
+            this.lblEmpName.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpName.Location = new System.Drawing.Point(149, 87);
+            this.lblEmpName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmpName.Name = "lblEmpName";
+            this.lblEmpName.Size = new System.Drawing.Size(37, 17);
+            this.lblEmpName.TabIndex = 19;
+            this.lblEmpName.Text = "label";
             // 
-            // label15
+            // lblEmpID
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(149, 57);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(37, 17);
-            this.label15.TabIndex = 18;
-            this.label15.Text = "label";
+            this.lblEmpID.AutoSize = true;
+            this.lblEmpID.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpID.Location = new System.Drawing.Point(149, 57);
+            this.lblEmpID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmpID.Name = "lblEmpID";
+            this.lblEmpID.Size = new System.Drawing.Size(37, 17);
+            this.lblEmpID.TabIndex = 18;
+            this.lblEmpID.Text = "label";
             // 
             // label10
             // 
@@ -284,8 +284,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label23);
-            this.panel2.Controls.Add(this.label22);
+            this.panel2.Controls.Add(this.lblTotDeduc);
+            this.panel2.Controls.Add(this.lblBasSal);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label11);
@@ -295,29 +295,29 @@
             this.panel2.Size = new System.Drawing.Size(323, 197);
             this.panel2.TabIndex = 3;
             // 
-            // label23
+            // lblTotDeduc
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(75)))), ((int)(((byte)(58)))));
-            this.label23.Location = new System.Drawing.Point(259, 87);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(37, 17);
-            this.label23.TabIndex = 25;
-            this.label23.Text = "label";
+            this.lblTotDeduc.AutoSize = true;
+            this.lblTotDeduc.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotDeduc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(75)))), ((int)(((byte)(58)))));
+            this.lblTotDeduc.Location = new System.Drawing.Point(259, 87);
+            this.lblTotDeduc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotDeduc.Name = "lblTotDeduc";
+            this.lblTotDeduc.Size = new System.Drawing.Size(37, 17);
+            this.lblTotDeduc.TabIndex = 25;
+            this.lblTotDeduc.Text = "label";
             // 
-            // label22
+            // lblBasSal
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(75)))), ((int)(((byte)(58)))));
-            this.label22.Location = new System.Drawing.Point(259, 57);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(37, 17);
-            this.label22.TabIndex = 24;
-            this.label22.Text = "label";
+            this.lblBasSal.AutoSize = true;
+            this.lblBasSal.Font = new System.Drawing.Font("DM Sans 14pt SemiBold", 7.799999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBasSal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(75)))), ((int)(((byte)(58)))));
+            this.lblBasSal.Location = new System.Drawing.Point(259, 57);
+            this.lblBasSal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBasSal.Name = "lblBasSal";
+            this.lblBasSal.Size = new System.Drawing.Size(37, 17);
+            this.lblBasSal.TabIndex = 24;
+            this.lblBasSal.Text = "label";
             // 
             // label13
             // 
@@ -390,24 +390,24 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.label27);
+            this.panel5.Controls.Add(this.lblNetPay);
             this.panel5.Controls.Add(this.label14);
             this.panel5.Location = new System.Drawing.Point(733, 213);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(323, 69);
             this.panel5.TabIndex = 20;
             // 
-            // label27
+            // lblNetPay
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("DM Sans 14pt", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(75)))), ((int)(((byte)(58)))));
-            this.label27.Location = new System.Drawing.Point(251, 17);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(45, 20);
-            this.label27.TabIndex = 27;
-            this.label27.Text = "label";
+            this.lblNetPay.AutoSize = true;
+            this.lblNetPay.Font = new System.Drawing.Font("DM Sans 14pt", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNetPay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(75)))), ((int)(((byte)(58)))));
+            this.lblNetPay.Location = new System.Drawing.Point(251, 17);
+            this.lblNetPay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNetPay.Name = "lblNetPay";
+            this.lblNetPay.Size = new System.Drawing.Size(45, 20);
+            this.lblNetPay.TabIndex = 27;
+            this.lblNetPay.Text = "label";
             // 
             // label14
             // 
@@ -457,7 +457,7 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // Salary
+            // SalaryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -474,7 +474,7 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "Salary";
+            this.Name = "SalaryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Salary";
             this.Load += new System.EventHandler(this.Salary_Load);
@@ -512,18 +512,18 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label lblPeriod;
+        private System.Windows.Forms.Label lblBasicSalary;
+        private System.Windows.Forms.Label lblPayType;
+        private System.Windows.Forms.Label lblDept;
+        private System.Windows.Forms.Label lblPos;
+        private System.Windows.Forms.Label lblEmpName;
+        private System.Windows.Forms.Label lblEmpID;
+        private System.Windows.Forms.Label lblTotDeduc;
+        private System.Windows.Forms.Label lblBasSal;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label lblNetPay;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Button btnClose;

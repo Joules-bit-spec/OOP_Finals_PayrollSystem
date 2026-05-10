@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OOP_Finals_PayrollSystem
 {
-    public partial class Salary : Form
+    public partial class SalaryForm : Form
     {
-        public Salary()
+        public SalaryForm()
         {
             InitializeComponent();
         }
@@ -29,7 +29,9 @@ namespace OOP_Finals_PayrollSystem
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            HomeForm homeForm = new HomeForm();
+            homeForm.Show();
         }
     }
 }

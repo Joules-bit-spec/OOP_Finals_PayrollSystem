@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OOP_Finals_PayrollSystem
+{
+    public class Employee
+    {
+        public int userID { get; set; }
+        public static int employeeID { get; set; }
+        public string passWord { get; set; }
+        
+        public static string firstName { get; set; }
+        public static string lastName { get; set; }
+        public static string middleInit { get; set; }
+        public static string GetFullName()
+        {
+            return $"{firstName} {middleInit} {lastName}";
+        }
+
+
+        public string gender { get; set; }
+        public string birthDate { get; set; }
+        public string email { get; set; }
+        public int contactNo { get; set; }
+        public string address { get; set; }
+        public string department { get; set; }
+        public string position { get; set; }
+
+
+    }
+}

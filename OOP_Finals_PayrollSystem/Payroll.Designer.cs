@@ -1,6 +1,6 @@
 ﻿namespace OOP_Finals_PayrollSystem
 {
-    partial class Payroll
+    partial class PayrollForm
     {
         /// <summary>
         /// Required designer variable.
@@ -172,6 +172,7 @@
             this.txtRate.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRate.Location = new System.Drawing.Point(218, 22);
             this.txtRate.Name = "txtRate";
+            this.txtRate.ReadOnly = true;
             this.txtRate.Size = new System.Drawing.Size(207, 37);
             this.txtRate.TabIndex = 7;
             // 
@@ -698,7 +699,7 @@
             this.btnClose.Text = "CLOSE";
             this.btnClose.UseVisualStyleBackColor = false;
             // 
-            // Payroll
+            // PayrollForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -710,7 +711,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
-            this.Name = "Payroll";
+            this.Name = "PayrollForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Payroll";
             this.panel1.ResumeLayout(false);
