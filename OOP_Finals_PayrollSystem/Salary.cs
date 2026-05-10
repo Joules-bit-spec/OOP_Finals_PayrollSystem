@@ -26,5 +26,10 @@ namespace OOP_Finals_PayrollSystem
         {
 
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

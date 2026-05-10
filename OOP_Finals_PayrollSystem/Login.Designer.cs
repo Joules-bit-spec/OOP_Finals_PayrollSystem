@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.txtUserID = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.llblFP = new System.Windows.Forms.LinkLabel();
             this.lblRegister = new System.Windows.Forms.LinkLabel();
-            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnSignIn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -58,14 +58,14 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // txtUserName
+            // txtUserID
             // 
-            this.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUserName.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserName.Location = new System.Drawing.Point(487, 244);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(281, 37);
-            this.txtUserName.TabIndex = 1;
+            this.txtUserID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUserID.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserID.Location = new System.Drawing.Point(487, 244);
+            this.txtUserID.Name = "txtUserID";
+            this.txtUserID.Size = new System.Drawing.Size(281, 37);
+            this.txtUserID.TabIndex = 1;
             // 
             // txtPassword
             // 
@@ -120,19 +120,21 @@
             this.lblRegister.TabIndex = 3;
             this.lblRegister.TabStop = true;
             this.lblRegister.Text = "Sign Up!";
+            this.lblRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblRegister_LinkClicked);
             // 
-            // btnRegister
+            // btnSignIn
             // 
-            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(95)))), ((int)(((byte)(173)))));
-            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister.Font = new System.Drawing.Font("DM Sans 14pt", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.btnRegister.Location = new System.Drawing.Point(490, 412);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(280, 46);
-            this.btnRegister.TabIndex = 4;
-            this.btnRegister.Text = "Sign in to Dashboard";
-            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnSignIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(95)))), ((int)(((byte)(173)))));
+            this.btnSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignIn.Font = new System.Drawing.Font("DM Sans 14pt", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.btnSignIn.Location = new System.Drawing.Point(490, 412);
+            this.btnSignIn.Name = "btnSignIn";
+            this.btnSignIn.Size = new System.Drawing.Size(280, 46);
+            this.btnSignIn.TabIndex = 4;
+            this.btnSignIn.Text = "Sign in to Dashboard";
+            this.btnSignIn.UseVisualStyleBackColor = false;
+            this.btnSignIn.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // label3
             // 
@@ -207,13 +209,13 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.lblRegister);
             this.Controls.Add(this.llblFP);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUserName);
+            this.Controls.Add(this.txtUserID);
             this.Controls.Add(this.pictureBox1);
             this.MaximizeBox = false;
             this.Name = "LoginForm";
@@ -229,13 +231,13 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.TextBox txtUserID;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel llblFP;
         private System.Windows.Forms.LinkLabel lblRegister;
-        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btnSignIn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;

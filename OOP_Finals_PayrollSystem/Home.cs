@@ -21,5 +21,10 @@ namespace OOP_Finals_PayrollSystem
         {
 
         }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

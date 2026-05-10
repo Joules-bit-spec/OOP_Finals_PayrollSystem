@@ -390,6 +390,7 @@
             this.btnEditProfile.TabIndex = 28;
             this.btnEditProfile.Text = "EDIT PROFILE";
             this.btnEditProfile.UseVisualStyleBackColor = false;
+            this.btnEditProfile.Click += new System.EventHandler(this.btnEditProfile_Click);
             // 
             // btnClose
             // 

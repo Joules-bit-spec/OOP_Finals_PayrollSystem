@@ -17,5 +17,9 @@ namespace OOP_Finals_PayrollSystem
             InitializeComponent();
         }
 
+        private void btnCompute_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

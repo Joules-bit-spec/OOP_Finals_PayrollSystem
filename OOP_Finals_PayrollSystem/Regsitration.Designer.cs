@@ -56,9 +56,7 @@
             this.txtRegUserID = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.txtRegPos = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtRegDept = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -66,6 +64,8 @@
             this.label19 = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.cmbDept = new System.Windows.Forms.ComboBox();
+            this.cmbPosition = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -306,14 +306,14 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.cmbPosition);
+            this.panel2.Controls.Add(this.cmbDept);
             this.panel2.Controls.Add(this.txtRegPass);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.txtRegUserID);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.txtRegPos);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.txtRegDept);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Location = new System.Drawing.Point(712, 158);
@@ -371,16 +371,6 @@
             this.label14.TabIndex = 9;
             this.label14.Text = "LOGIN CREDENTIALS";
             // 
-            // txtRegPos
-            // 
-            this.txtRegPos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.txtRegPos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRegPos.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegPos.Location = new System.Drawing.Point(22, 157);
-            this.txtRegPos.Name = "txtRegPos";
-            this.txtRegPos.Size = new System.Drawing.Size(271, 37);
-            this.txtRegPos.TabIndex = 6;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -390,16 +380,6 @@
             this.label9.Size = new System.Drawing.Size(66, 17);
             this.label9.TabIndex = 5;
             this.label9.Text = "POSITION";
-            // 
-            // txtRegDept
-            // 
-            this.txtRegDept.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.txtRegDept.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRegDept.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRegDept.Location = new System.Drawing.Point(22, 87);
-            this.txtRegDept.Name = "txtRegDept";
-            this.txtRegDept.Size = new System.Drawing.Size(271, 37);
-            this.txtRegDept.TabIndex = 4;
             // 
             // label12
             // 
@@ -463,6 +443,7 @@
             this.btnRegister.TabIndex = 17;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnCancel
             // 
@@ -476,6 +457,38 @@
             this.btnCancel.TabIndex = 18;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // cmbDept
+            // 
+            this.cmbDept.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.cmbDept.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDept.FormattingEnabled = true;
+            this.cmbDept.Items.AddRange(new object[] {
+            "Operations",
+            "Sales & Inventory",
+            "Finance & Administration",
+            "Customer Service"});
+            this.cmbDept.Location = new System.Drawing.Point(22, 86);
+            this.cmbDept.Name = "cmbDept";
+            this.cmbDept.Size = new System.Drawing.Size(271, 38);
+            this.cmbDept.TabIndex = 9;
+            // 
+            // cmbPosition
+            // 
+            this.cmbPosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.cmbPosition.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPosition.FormattingEnabled = true;
+            this.cmbPosition.Items.AddRange(new object[] {
+            "Operations",
+            "Sales & Inventory",
+            "Finance & Administration",
+            "Customer Service"});
+            this.cmbPosition.Location = new System.Drawing.Point(22, 156);
+            this.cmbPosition.Name = "cmbPosition";
+            this.cmbPosition.Size = new System.Drawing.Size(271, 38);
+            this.cmbPosition.TabIndex = 14;
+            this.cmbPosition.SelectedIndexChanged += new System.EventHandler(this.cmbPosition_SelectedIndexChanged);
             // 
             // RegForm
             // 
@@ -532,9 +545,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtRegPos;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtRegDept;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
@@ -547,5 +558,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.ComboBox cmbPosition;
+        private System.Windows.Forms.ComboBox cmbDept;
     }
 }
