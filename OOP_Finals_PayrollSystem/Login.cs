@@ -38,7 +38,8 @@ namespace OOP_Finals_PayrollSystem
         {
             try
             {
-                string query = "SELECT * FROM Users WHERE UserID = @UserID AND Password = @Password";
+                // Query Employees table (where registration data is stored), not Users table
+                string query = "SELECT * FROM Employees WHERE UserID = @UserID AND Password = @Password";
                 var parameters = new Dictionary<string, object>
                 {
                     { "@UserID", txtUserID.Text.Trim() },
@@ -47,6 +48,12 @@ namespace OOP_Finals_PayrollSystem
                 DataTable result = Db.ExecuteQuery(query, parameters);
                 if (result.Rows.Count > 0)
                 {
+                    // Store current user info
+                    CurrentUser.EmployeeID = Convert.ToInt32(result.Rows[0]["EmployeeID"]);
+                    CurrentUser.FirstName = result.Rows[0]["FirstName"].ToString();
+                    CurrentUser.LastName = result.Rows[0]["LastName"].ToString();
+                    CurrentUser.MiddleInit = result.Rows[0]["MiddleInitial"].ToString();
+
                     MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     HomeForm home = new HomeForm();
                     home.Show();

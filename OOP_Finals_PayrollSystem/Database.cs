@@ -21,7 +21,13 @@ namespace OOP_Finals_PayrollSystem
                     connection.Open();
 
                     // Insert the employee and retrieve the EmployeeID
-                    var command = new SqlCommand("INSERT INTO Employees (userID, passWord, firstName, lastName, middleInit, gender, birthDate, email, contactNo, address, department, position) VALUES (@userID, @passWord, @firstName, @lastName, @middleInit, @gender, @birthDate, @email, @contactNo, @address, @department, @position); SELECT SCOPE_IDENTITY();", connection);
+                    // Using PascalCase column names to match SQL Server schema
+                    var command = new SqlCommand(
+                        "INSERT INTO Employees (UserID, Password, FirstName, LastName, MiddleInitial, Gender, Birthdate, Email, ContactNo, Address, Department, Position) " +
+                        "VALUES (@userID, @passWord, @firstName, @lastName, @middleInit, @gender, @birthDate, @email, @contactNo, @address, @department, @position); " +
+                        "SELECT SCOPE_IDENTITY();", 
+                        connection);
+
                     command.Parameters.AddWithValue("@userID", employee.userID);
                     command.Parameters.AddWithValue("@passWord", employee.passWord);
                     command.Parameters.AddWithValue("@firstName", employee.firstName);
