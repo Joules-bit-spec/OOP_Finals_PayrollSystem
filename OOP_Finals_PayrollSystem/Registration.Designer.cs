@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dtpRegBirth = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtRegMidInit = new System.Windows.Forms.TextBox();
@@ -65,7 +66,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.dtpRegBirth = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -111,6 +111,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(318, 439);
             this.panel1.TabIndex = 2;
+            // 
+            // dtpRegBirth
+            // 
+            this.dtpRegBirth.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.dtpRegBirth.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpRegBirth.Location = new System.Drawing.Point(23, 378);
+            this.dtpRegBirth.Name = "dtpRegBirth";
+            this.dtpRegBirth.Size = new System.Drawing.Size(271, 37);
+            this.dtpRegBirth.TabIndex = 9;
             // 
             // label5
             // 
@@ -313,11 +322,6 @@
             this.cmbPosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
             this.cmbPosition.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPosition.FormattingEnabled = true;
-            this.cmbPosition.Items.AddRange(new object[] {
-            "Operations",
-            "Sales & Inventory",
-            "Finance & Administration",
-            "Customer Service"});
             this.cmbPosition.Location = new System.Drawing.Point(22, 156);
             this.cmbPosition.Name = "cmbPosition";
             this.cmbPosition.Size = new System.Drawing.Size(271, 38);
@@ -338,6 +342,7 @@
             this.cmbDept.Name = "cmbDept";
             this.cmbDept.Size = new System.Drawing.Size(271, 38);
             this.cmbDept.TabIndex = 9;
+            this.cmbDept.SelectedIndexChanged += new System.EventHandler(this.cmbDept_SelectedIndexChanged);
             // 
             // txtRegPass
             // 
@@ -477,15 +482,6 @@
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // dtpRegBirth
-            // 
-            this.dtpRegBirth.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.dtpRegBirth.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpRegBirth.Location = new System.Drawing.Point(23, 378);
-            this.dtpRegBirth.Name = "dtpRegBirth";
-            this.dtpRegBirth.Size = new System.Drawing.Size(271, 37);
-            this.dtpRegBirth.TabIndex = 9;
             // 
             // RegForm
             // 

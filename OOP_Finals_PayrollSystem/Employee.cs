@@ -9,17 +9,16 @@ namespace OOP_Finals_PayrollSystem
     public class Employee
     {
         public int userID { get; set; }
-        public static int employeeID { get; set; }
+        public int employeeID { get; set; }
         public string passWord { get; set; }
-        
-        public static string firstName { get; set; }
-        public static string lastName { get; set; }
-        public static string middleInit { get; set; }
-        public static string GetFullName()
+
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public string middleInit { get; set; }
+        public string GetFullName()
         {
             return $"{firstName} {middleInit} {lastName}";
         }
-
 
         public string gender { get; set; }
         public string birthDate { get; set; }
@@ -28,7 +27,5 @@ namespace OOP_Finals_PayrollSystem
         public string address { get; set; }
         public string department { get; set; }
         public string position { get; set; }
-
-
     }
 }

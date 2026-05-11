@@ -56,7 +56,7 @@ namespace OOP_Finals_PayrollSystem
                 conn.Open();
                 string query = "SELECT * FROM Employees WHERE EmployeeID = @EmployeeID";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@EmployeeID", Employee.employeeID);
+                cmd.Parameters.AddWithValue("@EmployeeID", CurrentUser.EmployeeID);
 
                 SqlDataReader dr = cmd.ExecuteReader();
 

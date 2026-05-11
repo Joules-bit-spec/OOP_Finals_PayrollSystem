@@ -40,14 +40,16 @@ namespace OOP_Finals_PayrollSystem
                 cmd.Parameters.AddWithValue("@MiddleInitial", txtEditMidInit.Text);
                 cmd.Parameters.AddWithValue("@ContactNo", txtEditContactNo.Text);
                 cmd.Parameters.AddWithValue("@Email", txtEditEmail.Text);
-                cmd.Parameters.AddWithValue("@EmployeeID", Employee.employeeID);
+                cmd.Parameters.AddWithValue("@EmployeeID", CurrentUser.EmployeeID);
 
                 cmd.ExecuteNonQuery();
 
                 MessageBox.Show("Profile updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            Employee.firstName = lblUser.Text;
+            CurrentUser.FirstName = txtEditFname.Text;
+            CurrentUser.LastName = txtEditSname.Text;
+            CurrentUser.MiddleInit = txtEditMidInit.Text;
 
             parentForm.LoadUserInfo();
             parentForm.Show();
@@ -67,7 +69,7 @@ namespace OOP_Finals_PayrollSystem
 
                 string query = "SELECT * FROM Employees WHERE EmployeeID = @EmployeeID";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@user", Employee.employeeID);
+                cmd.Parameters.AddWithValue("@EmployeeID", CurrentUser.EmployeeID);
 
                 SqlDataReader dr = cmd.ExecuteReader();
 
