@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -25,7 +22,7 @@ namespace OOP_Finals_PayrollSystem
                     var command = new SqlCommand(
                         "INSERT INTO Employees (UserID, Password, FirstName, LastName, MiddleInitial, Gender, Birthdate, Email, ContactNo, Address, Department, Position) " +
                         "VALUES (@userID, @passWord, @firstName, @lastName, @middleInit, @gender, @birthDate, @email, @contactNo, @address, @department, @position); " +
-                        "SELECT SCOPE_IDENTITY();", 
+                        "SELECT SCOPE_IDENTITY();",
                         connection);
 
                     command.Parameters.AddWithValue("@userID", employee.userID);

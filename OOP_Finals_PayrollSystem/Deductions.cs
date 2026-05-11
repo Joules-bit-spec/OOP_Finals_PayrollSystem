@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OOP_Finals_PayrollSystem
+﻿namespace OOP_Finals_PayrollSystem
 {
     public class Deductions
     {
@@ -16,6 +10,7 @@ namespace OOP_Finals_PayrollSystem
         public double Philhealth;
         public double hoursWorked;
         public double daysWorked;
+        public double BasicSalary;
 
         public double Deduction;
 
@@ -25,25 +20,25 @@ namespace OOP_Finals_PayrollSystem
 
         public double GetSSS()
         {
-            SSS = GrossPay * 0.15;
+            SSS = BasicSalary * 0.15;
             return SSS;
         }
 
         public double GetPhilhealth()
         {
-            Philhealth = GrossPay * 0.05;
+            Philhealth = BasicSalary * 0.05;
             return Philhealth;
         }
 
         public double GetPagibig()
         {
-            Pagibig = GrossPay * 0.04;
+            Pagibig = BasicSalary * 0.04;
             return Pagibig;
         }
 
         public double GetTax()
         {
-            Tax = GrossPay * 0.15;
+            Tax = BasicSalary * 0.15;
             return Tax;
         }
 
@@ -55,13 +50,14 @@ namespace OOP_Finals_PayrollSystem
 
         public double GetNetPay()
         {
-            netPay = GrossPay - Deduction;
+            netPay = BasicSalary - Deduction;
             return netPay;
         }
 
         public double GetBasicSalary()
         {
-            return GrossPay * hoursWorked * daysWorked;
+            BasicSalary = GrossPay * hoursWorked * daysWorked;
+            return BasicSalary;
         }
     }
 }

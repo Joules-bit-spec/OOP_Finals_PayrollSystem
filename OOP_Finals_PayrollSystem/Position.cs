@@ -10,6 +10,11 @@ namespace OOP_Finals_PayrollSystem
     {
         public double GetPositionRate()
         {
+            if (string.IsNullOrEmpty(Position))
+            {
+                return 0;
+            }
+
             if(Position == "Service Technician")
             {
                 grossPay = 140;

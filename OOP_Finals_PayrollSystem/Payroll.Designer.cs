@@ -83,6 +83,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -175,6 +176,7 @@
             this.txtRate.ReadOnly = true;
             this.txtRate.Size = new System.Drawing.Size(207, 37);
             this.txtRate.TabIndex = 7;
+            this.txtRate.TextChanged += new System.EventHandler(this.txtRate_TextChanged);
             // 
             // label1
             // 
@@ -189,6 +191,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.btnClear);
             this.panel2.Controls.Add(this.btnCompute);
             this.panel2.Controls.Add(this.txtTotDeduc1);
             this.panel2.Controls.Add(this.label13);
@@ -218,9 +221,9 @@
             this.btnCompute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCompute.Font = new System.Drawing.Font("DM Sans 14pt Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCompute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.btnCompute.Location = new System.Drawing.Point(481, 219);
+            this.btnCompute.Location = new System.Drawing.Point(644, 219);
             this.btnCompute.Name = "btnCompute";
-            this.btnCompute.Size = new System.Drawing.Size(370, 46);
+            this.btnCompute.Size = new System.Drawing.Size(207, 46);
             this.btnCompute.TabIndex = 40;
             this.btnCompute.Text = "COMPUTE";
             this.btnCompute.UseVisualStyleBackColor = false;
@@ -698,6 +701,21 @@
             this.btnClose.TabIndex = 19;
             this.btnClose.Text = "CLOSE";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(95)))), ((int)(((byte)(173)))));
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("DM Sans 14pt Medium", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.btnClear.Location = new System.Drawing.Point(481, 219);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(157, 46);
+            this.btnClear.TabIndex = 41;
+            this.btnClear.Text = "CLEAR";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // PayrollForm
             // 
@@ -714,6 +732,7 @@
             this.Name = "PayrollForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Payroll";
+            this.Load += new System.EventHandler(this.PayrollForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -783,5 +802,6 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label lblTotDeduc;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnClear;
     }
 }

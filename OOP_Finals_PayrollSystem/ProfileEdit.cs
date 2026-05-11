@@ -96,5 +96,11 @@ namespace OOP_Finals_PayrollSystem
                 }
             }
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            parentForm.Show();
+            this.Hide();
+        }
     }
 }

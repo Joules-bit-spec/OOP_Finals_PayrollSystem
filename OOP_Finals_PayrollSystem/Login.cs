@@ -53,6 +53,8 @@ namespace OOP_Finals_PayrollSystem
                     CurrentUser.FirstName = result.Rows[0]["FirstName"].ToString();
                     CurrentUser.LastName = result.Rows[0]["LastName"].ToString();
                     CurrentUser.MiddleInit = result.Rows[0]["MiddleInitial"].ToString();
+                    CurrentUser.Position = result.Rows[0]["Position"].ToString();
+                    CurrentUser.Department = result.Rows[0]["Department"].ToString();
 
                     MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     HomeForm home = new HomeForm();

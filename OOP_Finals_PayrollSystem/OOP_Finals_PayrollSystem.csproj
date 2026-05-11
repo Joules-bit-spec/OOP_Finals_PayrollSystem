@@ -246,7 +246,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Application\" />
     <Folder Include="Configuration\" />
+    <Folder Include="Domain\Deductions\" />
+    <Folder Include="Domain\Payroll\" />
+    <Folder Include="Domain\Positions\" />
     <Folder Include="Exceptions\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Models\" />

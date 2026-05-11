@@ -49,6 +49,11 @@ namespace OOP_Finals_PayrollSystem
             homeForm.Show();
         }
 
+        private void ProfileForm_Load(object sender, EventArgs e)
+        {
+            LoadUserInfo();
+        }
+
         public void LoadUserInfo()
         {
             using (SqlConnection conn = Database.GetConnection())
@@ -86,3 +91,4 @@ namespace OOP_Finals_PayrollSystem
         }
     }
 }
+

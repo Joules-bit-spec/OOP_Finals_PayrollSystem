@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfileForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbProGender = new System.Windows.Forms.ComboBox();
+            this.dtpProBirth = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtProMidInit = new System.Windows.Forms.TextBox();
@@ -58,8 +60,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.btnEditProfile = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.dtpProBirth = new System.Windows.Forms.DateTimePicker();
-            this.cmbProGender = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel2.SuspendLayout();
@@ -84,6 +84,29 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(917, 241);
             this.panel1.TabIndex = 0;
+            // 
+            // cmbProGender
+            // 
+            this.cmbProGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.cmbProGender.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbProGender.FormattingEnabled = true;
+            this.cmbProGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cmbProGender.Location = new System.Drawing.Point(322, 176);
+            this.cmbProGender.Name = "cmbProGender";
+            this.cmbProGender.Size = new System.Drawing.Size(271, 38);
+            this.cmbProGender.TabIndex = 21;
+            // 
+            // dtpProBirth
+            // 
+            this.dtpProBirth.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.dtpProBirth.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpProBirth.Location = new System.Drawing.Point(26, 177);
+            this.dtpProBirth.Name = "dtpProBirth";
+            this.dtpProBirth.Size = new System.Drawing.Size(271, 37);
+            this.dtpProBirth.TabIndex = 20;
+            this.dtpProBirth.ValueChanged += new System.EventHandler(this.dtpProBirth_ValueChanged);
             // 
             // label1
             // 
@@ -394,29 +417,6 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // dtpProBirth
-            // 
-            this.dtpProBirth.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.dtpProBirth.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpProBirth.Location = new System.Drawing.Point(26, 177);
-            this.dtpProBirth.Name = "dtpProBirth";
-            this.dtpProBirth.Size = new System.Drawing.Size(271, 37);
-            this.dtpProBirth.TabIndex = 20;
-            this.dtpProBirth.ValueChanged += new System.EventHandler(this.dtpProBirth_ValueChanged);
-            // 
-            // cmbProGender
-            // 
-            this.cmbProGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.cmbProGender.Font = new System.Drawing.Font("DM Sans 14pt", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbProGender.FormattingEnabled = true;
-            this.cmbProGender.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.cmbProGender.Location = new System.Drawing.Point(322, 176);
-            this.cmbProGender.Name = "cmbProGender";
-            this.cmbProGender.Size = new System.Drawing.Size(271, 38);
-            this.cmbProGender.TabIndex = 21;
-            // 
             // ProfileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -435,6 +435,7 @@
             this.Name = "ProfileForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User Profile";
+            this.Load += new System.EventHandler(this.ProfileForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();

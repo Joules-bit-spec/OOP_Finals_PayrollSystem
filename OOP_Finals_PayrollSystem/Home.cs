@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace OOP_Finals_PayrollSystem
 {
@@ -20,7 +12,6 @@ namespace OOP_Finals_PayrollSystem
 
         private void label3_Click(object sender, EventArgs e)
         {
-
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
@@ -46,7 +37,7 @@ namespace OOP_Finals_PayrollSystem
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Are you sure you want to logout?","Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Are you sure you want to logout?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 this.Close();
@@ -60,6 +51,22 @@ namespace OOP_Finals_PayrollSystem
             this.Hide();
             SalaryForm deductionForm = new SalaryForm();
             deductionForm.Show();
+        }
+
+        private void HomeForm_Load(object sender, EventArgs e)
+        {
+            // Display user information
+            lblUser.Text = CurrentUser.GetFullName();
+            lblPosition.Text = CurrentUser.Position;
+
+            // Display payroll summary information
+            txtUserName.Text = CurrentUser.EmployeeID.ToString();
+            textBox1.Text = CurrentUser.GetFullName();
+            textBox2.Text = CurrentUser.Position;
+            textBox3.Text = CurrentUser.Department;
+            textBox7.Text = CurrentUser.BasicSalary.ToString("C");
+            textBox6.Text = CurrentUser.TotalDeductions.ToString("C");
+            textBox5.Text = CurrentUser.NetPay.ToString("C");
         }
     }
 }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OOP_Finals_PayrollSystem
+﻿namespace OOP_Finals_PayrollSystem
 {
     public class Employee
     {
@@ -15,6 +9,7 @@ namespace OOP_Finals_PayrollSystem
         public string firstName { get; set; }
         public string lastName { get; set; }
         public string middleInit { get; set; }
+
         public string GetFullName()
         {
             return $"{firstName} {middleInit} {lastName}";
